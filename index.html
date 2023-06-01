@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>game</title>
+</head>
+<body>
+    <div class="startScreen screen" id="startScreen">
+        <button class="startButton button" id="startButton">
+            <img src="./img/playbtn.png" alt="Play">
+        </button>
+    </div>
+    <div class="game">
+        <div class="player1Zone disabled" id="player1Zone">
+            <div class="timerContainer">
+                <div class="span1 timerContainerSpan">1</div>
+                <div class="span2 timerContainerSpan">2</div>
+                <div class="span3 timerContainerSpan">3</div>
+                <div class="go timerContainerSpan">Go!</div>
+            </div>
+            <div class="blueWinnerAlert winnerAlert" id="blueWinnerAlert">You win!</div>
+        </div>
+        <div class="player2Zone disabled" id="player2Zone">
+            <div class="timerContainer">
+                <div class="span1 timerContainerSpan">1</div>
+                <div class="span2 timerContainerSpan">2</div>
+                <div class="span3 timerContainerSpan">3</div>
+                <div class="go timerContainerSpan">Go!</div>
+            </div>
+            <div class="redWinnerAlert winnerAlert" id="redWinnerAlert">You win!</div>
+        </div>
+    </div>
+    <div class="endScreen screen" id="gameOverScreen">
+        <button class="endButton button" id="endButton">
+            <img src="./img/restartBtnIcon.png" alt="Play">
+        </button>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
