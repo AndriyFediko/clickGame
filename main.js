@@ -62,18 +62,18 @@ const player1 = document.getElementById("player1Zone");
 const player2 = document.getElementById("player2Zone");
 const startBtn = document.getElementById("startButton");
 const restartBtn = document.getElementById("endButton");
-startBtn.onclick = () => game1.start();
-player1.onclick = () => {
+startBtn.ontouchend = () => game1.start();
+player1.ontouchend = () => {
     if (!player1.classList.contains("disabled")) {
         game1.blueZoneGrow();
     };
 };
-player2.onclick = () => {
+player2.ontouchend = () => {
     if (!player2.classList.contains("disabled")){
         game1.redZoneGrow();
     };
 };
-restartBtn.onclick = () => game1.gameRestart();
+restartBtn.ontouchend = () => game1.gameRestart();
 document.addEventListener('touchmove', function (event) {
     if (event.scale !== 1) { event.preventDefault(); }
 }, false);
